@@ -74,4 +74,5 @@ Output;
 🛸: {'aliases': ['ufo', 'spaceship', 'spacecraft'], 'description': 'An alien spacecraft.'}
 ```
 ***
+
 Made with 🖤 by [Richard Mwewa](https://about.me/rly0nheart)
