@@ -1,9 +1,19 @@
 [tool.poetry]
 name = "glyphoji"
 version = "0.1.0"
-description = ""
+description = "Modern hieroglyphs in the terminal."
 authors = ["Richard Mwewa <rly0nheart@duck.com>"]
 readme = "README.md"
+license = "MIT License"
+homepage = "https://pypi.org/project/glyphoji"
+repository = "https://github.com/rly0nheart/glyphoji"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+]
+include = [{path = "glyphoji/data/settings.json"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"
