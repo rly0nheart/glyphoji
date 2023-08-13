@@ -1,6 +1,10 @@
 ![hieroglyph](https://github.com/rly0nheart/glyphoji/assets/74001397/612da558-c52b-48c0-b820-95cce741467e)
 *Modern hieroglyphs in the terminal.*
 
+![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
+[![CodeQL](https://github.com/rly0nheart/glyphoji/actions/workflows/codeql.yml/badge.svg)](https://github.com/rly0nheart/glyphoji/actions/workflows/codeql.yml)
+[![Upload Python Package](https://github.com/rly0nheart/glyphoji/actions/workflows/python-publish.yml/badge.svg)](https://github.com/rly0nheart/glyphoji/actions/workflows/python-publish.yml)
+
 Glyphoji lets you easily print and format emojis anywhere, with the latest emoji's support.
 
 # ⬇️ Installation
