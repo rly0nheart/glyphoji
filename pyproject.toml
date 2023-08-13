@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "glyphoji"
+version = "0.1.0"
+description = ""
+authors = ["Richard Mwewa <rly0nheart@duck.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
