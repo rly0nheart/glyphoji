@@ -1,22 +1,22 @@
-![hieroglyph](https://github.com/rly0nheart/glyphoji/assets/74001397/51f1a2e3-b04f-40ba-bd2a-1007b570c5a8)
+![hieroglyph](https://github.com/rly0nheart/glyphoji/assets/74001397/612da558-c52b-48c0-b820-95cce741467e)
 *Modern hieroglyphs in the terminal.*
 
 Glyphoji lets you easily print and format emojis anywhere, with the latest emoji's support.
 
-# Installation
-## PyPI
+# ⬇️ Installation
+## 🐍 PyPI
 Glyphoji can be installed from PyPI with `pip` by running the command;
 ```
 pip install glyphoji
 ```
-## GitHub
+## ❔ GitHub
 Intstalling the unreleased version of Glyphoji can also be done with `pip`, unless you want to build it yourself from source.
 ```
 pip install git+https://github.com/rly0nheart/glyphoji.git
 ```
 ***
-# Code Examples
-## Available emojis
+# 📖 Code Examples
+## 🔣 Available emojis
 All emojis can be printed by calling the *`glyphs`* attribute from *`glyph`*
 ```Python
 from glyphoji import glyph
@@ -45,7 +45,7 @@ Output;
 ...
 ```
 
-## Formatting glyphs in strings
+## 📄 Formatting glyphs in strings
 A Gyphoji glyph/emoji can be formatted and used anywhere. Glyphs can be called from *`glyph`* by specifying the glyph name or alias as the attribute.
 
 ```Python
@@ -58,7 +58,7 @@ Output;
 ```
 This 🍔 is a burger!
 ```
-## Searching Glyphs
+## 🔍 Searching Glyphs
 Glyphoji also lets users search for a specific glyph, and returns all results that closely match with the query. The query can be the glyph name or a description of the glyph.
 
 ```Python
