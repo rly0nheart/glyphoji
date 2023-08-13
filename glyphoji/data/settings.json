@@ -19,7 +19,6 @@
         "👀": {"aliases": ["eyes", "see"], "description": "A pair of eyes."},
         "👅": {"aliases": ["tongue"], "description": "A tongue."},
         "👄": {"aliases": ["mouth"], "description": "A mouth."},
-        "🫦": {"aliases": ["toothbrush"], "description": "A toothbrush."},
         "👣": {"aliases": ["footprints"], "description": "Footprints."},
         "🧬": {"aliases": ["dna"], "description": "A DNA double helix."},
         "🩸": {"aliases": ["drop_of_blood"], "description": "A drop of blood."},
