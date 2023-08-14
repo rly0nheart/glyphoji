@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "glyphoji"
-version = "0.2.0"
+version = "0.2.1"
 description = "Modern hieroglyphs in the terminal."
 authors = ["Richard Mwewa <rly0nheart@duck.com>"]
 readme = "README.md"
@@ -9,9 +9,12 @@ homepage = "https://pypi.org/project/glyphoji"
 repository = "https://github.com/rly0nheart/glyphoji"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
     "Intended Audience :: Developers",
+    "Environment :: Console",
     "Natural Language :: English",
     "Operating System :: OS Independent",
+    "Topic :: Artistic Software"
 ]
 include = [{path = "glyphoji/data/settings.json"}]
 
