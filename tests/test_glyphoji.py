@@ -32,7 +32,7 @@ class TestGlyphoji(unittest.TestCase):
 
     def test_prettify_json(self):
         # Testing the __prettify_json static method
-        json_object = {"a": 1, "": 2}
+        json_object = {"a": 1, "b": 2}
         result = glyph._Glyphoji__prettify_json(json_object)
         self.assertIsInstance(result, str)
         self.assertIn("\n", result)
