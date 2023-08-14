@@ -5,22 +5,22 @@
 [![CodeQL](https://github.com/rly0nheart/glyphoji/actions/workflows/codeql.yml/badge.svg)](https://github.com/rly0nheart/glyphoji/actions/workflows/codeql.yml)
 [![Upload Python Package](https://github.com/rly0nheart/glyphoji/actions/workflows/python-publish.yml/badge.svg)](https://github.com/rly0nheart/glyphoji/actions/workflows/python-publish.yml)
 
-Glyphoji lets you easily print and format emojis anywhere, with the latest emoji's support.
+*Glyphoji lets you easily print and format emojis anywhere in the terminal.*
 
-# ⬇️ Installation
-## 🐍 PyPI
+## ⬇️ Installation
+### 🐍 PyPI
 Glyphoji can be installed from PyPI with `pip` by running the command;
 ```
 pip install glyphoji
 ```
-## ❔ GitHub
+### ❔ GitHub
 Intstalling the unreleased version of Glyphoji can also be done with `pip`, unless you want to build it yourself from source.
 ```
 pip install git+https://github.com/rly0nheart/glyphoji.git
 ```
 ***
-# 📖 Code Examples
-## 🔣 Available emojis
+## 📖 Code Examples
+### 🔣 Available emojis
 All emojis can be printed by calling the *`glyphs`* attribute from *`glyph`*
 ```Python
 from glyphoji import glyph
@@ -49,7 +49,7 @@ Output;
 ...
 ```
 
-## 📄 Formatting glyphs in strings
+### 📄 Formatting glyphs in strings
 A Gyphoji glyph/emoji can be formatted and used anywhere. Glyphs can be called from *`glyph`* by specifying the glyph name or alias as the attribute.
 
 ```Python
@@ -62,7 +62,7 @@ Output;
 ```
 This 🍔 is a burger!
 ```
-## 🔍 Searching Glyphs
+### 🔍 Searching Glyphs
 Glyphoji also lets users search for a specific glyph, and returns all results that closely match with the query. The query can be the glyph name or a description of the glyph.
 
 ```Python
