@@ -18,7 +18,7 @@ pip install git+https://github.com/rly0nheart/glyphoji.git
 ```
 ***
 ## 📖 Code Examples
-### 🔣 Available emojis
+### 🔣 Available Glyphs/Emojis
 All glyphs/emojis can be printed by accessing the *`glyphs`* attribute from the *`glyph`* instance.
 ```Python
 from glyphoji import glyph
