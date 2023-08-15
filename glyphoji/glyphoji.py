@@ -55,9 +55,9 @@ class Glyphoji:
         """
         result = {}
         suggestions = []
-        for glyph, glyphs in self.__glyph_dictionary.items():
-            if query in glyphs["aliases"] or query in glyphs["description"]:
-                result[glyph] = glyphs
+        for glyph, data in self.__glyph_dictionary.items():
+            if query in data["aliases"] or query in data["description"]:
+                result[glyph] = data
 
         if not result:
             all_aliases = [
@@ -68,17 +68,7 @@ class Glyphoji:
             suggestions = difflib.get_close_matches(query, all_aliases)
             return f"(did you mean {', '.join(suggestions)}?)"
 
-        return self.__get_glyphs(dict_object=result)
-
-    @staticmethod
-    def __prettify_json(json_object: dict) -> str:
-        """
-        Prettifies a JSON object with indentation.
-
-        :param json_object: JSON object to prettify
-        :return: Prettified JSON string
-        """
-        return json.dumps(json_object, indent=6, ensure_ascii=False)
+        return f"Close matches to `{query}`:\n{self.__get_glyphs(dict_object=result)}"
 
     @staticmethod
     def __get_glyphs(dict_object: dict) -> str:
