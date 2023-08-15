@@ -19,7 +19,7 @@ pip install git+https://github.com/rly0nheart/glyphoji.git
 ***
 ## 📖 Code Examples
 ### 🔣 Available emojis
-All glyphs/emojis can be printed by accessing the *`glyphs`* attribute from *`glyph`*
+All glyphs/emojis can be printed by accessing the *`glyphs`* attribute from the *`glyph`* instance.
 ```Python
 from glyphoji import glyph
 
@@ -40,7 +40,7 @@ Output;
 ```
 
 ### 📄 Formatting glyphs in strings
-A Gyphoji glyph/emoji can be formatted and used anywhere. Glyphs can be accessed from *`glyph`* by specifying the glyph name or alias as the attribute.
+A Gyphoji glyph/emoji can be formatted and used anywhere. Glyphs can be accessed from the *`glyph`* instance by specifying the glyph name/alias as the attribute.
 
 ```Python
 from glyphoji import glyph
