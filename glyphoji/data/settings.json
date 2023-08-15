@@ -2,7 +2,7 @@
     "program": {
         "name": "Glyphoji",
         "about": "Modern hieroglyphs in the terminal.",
-        "version":  "0.2.1",
+        "version":  "0.2.2",
         "author": {
             "name": "Richard Mwewa",
             "email": "rly0nheart@duck.com"
@@ -2074,7 +2074,7 @@
         "🇨🇺": {"aliases": ["flag_cuba", "cuba"], "description": "The flag of Cuba."},
         "🇨🇼": {"aliases": ["flag_curacao", "curacao"], "description": "The flag of Curaçao."},
         "🇩🇲": {"aliases": ["flag_dominica", "dominica"], "description": "The flag of Dominica."},
-        "🇩🇴": {"aliases": ["flag_dominican_republic", "dominican_republic"], ",description": "The flag of Dominican Republic."},
+        "🇩🇴": {"aliases": ["flag_dominican_republic", "dominican_republic"], "description": "The flag of Dominican Republic."},
         "🇪🇨": {"aliases": ["flag_ecuador", "ecuador"], "description": "The flag of Ecuador."},
         "🇫🇰": {"aliases": ["flag_falkland_islands", "falkland_islands"], "description": "The flag of Falkland Islands."},
         "🇬🇩": {"aliases": ["flag_grenada", "grenada"], "description": "The flag of Grenada."},
@@ -2129,7 +2129,7 @@
         "🇰🇵": {"aliases": ["flag_north_korea", "north_korea"], "description": "The flag of North Korea."},
         "🇰🇷": {"aliases": ["flag_south_korea", "south_korea"], "description": "The flag of South Korea."},
         "🇰🇼": {"aliases": ["flag_kuwait", "kuwait"], "description": "The flag of Kuwait."},
-        "🇰🇿": {"aliases": ["flag_kazakhstan", "kazakhstan"], ",description": "The flag of Kazakhstan."},
+        "🇰🇿": {"aliases": ["flag_kazakhstan", "kazakhstan"], "description": "The flag of Kazakhstan."},
         "🇱🇦": {"aliases": ["flag_laos", "laos"], "description": "The flag of Laos."},
         "🇱🇧": {"aliases": ["flag_lebanon", "lebanon"], "description": "The flag of Lebanon."},
         "🇱🇰": {"aliases": ["flag_sri_lanka", "sri_lanka"], "description": "The flag of Sri Lanka."},

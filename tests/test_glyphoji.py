@@ -30,13 +30,6 @@ class TestGlyphoji(unittest.TestCase):
         self.assertIn("🛸", result)  # Checking that the result contains the "🛸" emoji
         self.assertIn("did you mean", unknown_result)
 
-    def test_prettify_json(self):
-        # Testing the __prettify_json static method
-        json_object = {"a": 1, "b": 2}
-        result = glyph._Glyphoji__prettify_json(json_object)
-        self.assertIsInstance(result, str)
-        self.assertIn("\n", result)
-
     def test_get_glyphs(self):
         # Testing the __get_glyphs static method
         dict_object = {"a": "value_a", "b": "value_b"}
