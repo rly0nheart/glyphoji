@@ -54,7 +54,7 @@ class Glyphoji:
         :return: Glyphs if found, or suggestions if not found
         """
         result = {}
-        # suggestions = []
+        suggestions = []
         for glyph, glyphs in self.__glyph_dictionary.items():
             if query in glyphs["aliases"] or query in glyphs["description"]:
                 result[glyph] = glyphs
