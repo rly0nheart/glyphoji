@@ -15,9 +15,9 @@ class Glyphoji:
        
     def __init__(self):
         """
-        Initialises the Glyphoji class by loading the glyphs from settings.
+        Initialises the Glyphoji class by loading the glyphs from data.json.
         """
-        self.__glyph_dictionary = self.__settings()["glyphs"]
+        self.__glyph_dictionary = self.__data__()["glyphs"]
         
     def __getattr__(self, name: str) -> str:
         """
@@ -76,15 +76,15 @@ class Glyphoji:
         return "\n".join([f"{key}: {value}" for key, value in dict_object.items()])
 
     @staticmethod
-    def __settings() -> dict:
+    def __data__() -> dict:
         """
-        Loads the program's settings from /data/settings.json.
+        Loads the program's data from /data/data.json.
 
-        :return: Dictionary (JSON) containing program settings
+        :return: Dictionary (JSON) containing program data.
         """
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        settings_path = os.path.join(current_dir, "data", "settings.json")
-        with open(settings_path, encoding="utf-8") as file:
+        data_path = os.path.join(current_dir, "data", "data.json")
+        with open(data_path, encoding="utf-8") as file:
             data = json.load(file)
 
         return data
