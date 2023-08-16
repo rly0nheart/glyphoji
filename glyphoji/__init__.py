@@ -7,7 +7,7 @@ def __init_glyph():
 
     :return: An instance of the Glyphoji class.
     """
-    from .__main import Glyphoji
+    from .main import Glyphoji
     
     return Glyphoji()
 
