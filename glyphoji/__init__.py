@@ -8,12 +8,8 @@ def __init_glyph():
     :return: An instance of the Glyphoji class.
     """
     from .main import Glyphoji
-    
+
     return Glyphoji()
 
-glyph = __init_glyph()
 
-__author__ = glyph.__data()["program"]["author"]["name"]
-__email__ = glyph.__data()["program"]["author"]["email"]
-__version__ = glyph.__data()["program"]["version"]
-__description__ = glyph.__data()["program"]["about"]
+glyph = __init_glyph()
