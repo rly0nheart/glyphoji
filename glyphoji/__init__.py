@@ -1,4 +1,4 @@
-def __init_glyph__():
+def __init_glyph():
     """
     Initialises and returns an instance of the Glyphoji class from the main module.
 
@@ -11,9 +11,9 @@ def __init_glyph__():
     
     return Glyphoji()
 
-glyph = __init_glyph__()
+glyph = __init_glyph()
 
-__author__ = glyph.__data__()["program"]["author"]["name"]
-__email__ = glyph.__data__()["program"]["author"]["email"]
-__version__ = glyph.__data__()["program"]["version"]
-__description__ = glyph.__data__()["program"]["about"]
+__author__ = glyph.__data()["program"]["author"]["name"]
+__email__ = glyph.__data()["program"]["author"]["email"]
+__version__ = glyph.__data()["program"]["version"]
+__description__ = glyph.__data()["program"]["about"]
