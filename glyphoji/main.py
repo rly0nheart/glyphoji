@@ -10,14 +10,14 @@ class Glyphoji:
     functionalities to retrieve glyphs by their name, search for glyphs, and
     format them.
     
-    :attr __glyph_dictionary__: A dictionary containing the details of all available glyphs.
+    :attr __glyph_dictionary: A dictionary containing the details of all available glyphs.
     """
        
     def __init__(self):
         """
         Initialises the Glyphoji class by loading the glyphs from data.json.
         """
-        self.__glyph_dictionary__ = self.__data__()["glyphs"]
+        self.__glyph_dictionary = self.__data()["glyphs"]
         
     def __getattr__(self, name: str) -> str:
         """
@@ -26,7 +26,7 @@ class Glyphoji:
         :param name: Name or alias of the glyph
         :return: Glyph if found, or a search suggestion if not found
         """
-        for glyph, details in self.__glyph_dictionary__.items():
+        for glyph, details in self.__glyph_dictionary.items():
             if name in details["aliases"]:
                 return glyph
 
@@ -39,7 +39,7 @@ class Glyphoji:
 
         :return: String containing all glyphs
         """
-        return self.__get_glyphs__(dict_object=self.__glyph_dictionary__)
+        return self.__get_glyphs(dict_object=self.__glyph_dictionary)
 
     def search(self, query: str) -> str:
         """
@@ -50,23 +50,23 @@ class Glyphoji:
         """
         result = {}
         suggestions = []
-        for glyph, data in self.__glyph_dictionary__.items():
+        for glyph, data in self.__glyph_dictionary.items():
             if query in data["aliases"] or query in data["description"]:
                 result[glyph] = data
 
         if not result:
             all_aliases = [
                 alias
-                for glyph_data in self.__glyph_dictionary__.values()
+                for glyph_data in self.__glyph_dictionary.values()
                 for alias in glyph_data["aliases"]
             ]
             suggestions = difflib.get_close_matches(query, all_aliases)
             return f"(did you mean {', '.join(suggestions)}?)"
 
-        return f"Close matches to `{query}`:\n{self.__get_glyphs__(dict_object=result)}"
+        return f"Close matches to `{query}`:\n{self.__get_glyphs(dict_object=result)}"
 
     @staticmethod
-    def __get_glyphs__(dict_object: dict) -> str:
+    def __get_glyphs(dict_object: dict) -> str:
         """
         Formats the dictionary of glyphs into a string.
 
@@ -76,7 +76,7 @@ class Glyphoji:
         return "\n".join([f"{key}: {value}" for key, value in dict_object.items()])
 
     @staticmethod
-    def __data__() -> dict:
+    def __data() -> dict:
         """
         Loads the program's data from /data/data.json.
 
