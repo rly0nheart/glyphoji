@@ -3,27 +3,22 @@ import json
 import difflib
 
 
-def settings() -> dict:
-    """
-    Loads the program's settings from /data/settings.json.
-
-    :return: Dictionary (JSON) containing program settings
-    """
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    settings_path = os.path.join(current_dir, "data", "settings.json")
-    with open(settings_path, encoding="utf-8") as file:
-        data = json.load(file)
-
-    return data
-
-
 class Glyphoji:
+    """
+    A class that represents and manages Glyphoji, which enables access to
+    various glyphs or emojis by their names and aliases. This class provides
+    functionalities to retrieve glyphs by their name, search for glyphs, and
+    format them.
+    
+    :attr _glyph_dictionary: A dictionary containing the details of all available glyphs.
+    """
+       
     def __init__(self):
         """
-        Initializes the Glyphoji class by loading the glyphs from settings.
+        Initialises the Glyphoji class by loading the glyphs from settings.
         """
-        self.__glyph_dictionary = settings()["glyphs"]
-
+        self._glyph_dictionary = self.settings()["glyphs"]
+        
     def __getattr__(self, name: str) -> str:
         """
         Retrieves the glyph associated with the given name or alias.
@@ -31,12 +26,12 @@ class Glyphoji:
         :param name: Name or alias of the glyph
         :return: Glyph if found, or a search suggestion if not found
         """
-        for glyph, details in self.__glyph_dictionary.items():
+        for glyph, details in self._glyph_dictionary.items():
             if name in details["aliases"]:
                 return glyph
 
         return self.search(query=name)
-
+        
     @property
     def glyphs(self) -> str:
         """
@@ -44,7 +39,7 @@ class Glyphoji:
 
         :return: String containing all glyphs
         """
-        return self.__get_glyphs(dict_object=self.__glyph_dictionary)
+        return self._get_glyphs(dict_object=self._glyph_dictionary)
 
     def search(self, query: str) -> str:
         """
@@ -55,23 +50,23 @@ class Glyphoji:
         """
         result = {}
         suggestions = []
-        for glyph, data in self.__glyph_dictionary.items():
+        for glyph, data in self._glyph_dictionary.items():
             if query in data["aliases"] or query in data["description"]:
                 result[glyph] = data
 
         if not result:
             all_aliases = [
                 alias
-                for glyph_data in self.__glyph_dictionary.values()
+                for glyph_data in self._glyph_dictionary.values()
                 for alias in glyph_data["aliases"]
             ]
             suggestions = difflib.get_close_matches(query, all_aliases)
             return f"(did you mean {', '.join(suggestions)}?)"
 
-        return f"Close matches to `{query}`:\n{self.__get_glyphs(dict_object=result)}"
+        return f"Close matches to `{query}`:\n{self._get_glyphs(dict_object=result)}"
 
     @staticmethod
-    def __get_glyphs(dict_object: dict) -> str:
+    def _get_glyphs(dict_object: dict) -> str:
         """
         Formats the dictionary of glyphs into a string.
 
@@ -79,3 +74,17 @@ class Glyphoji:
         :return: Formatted string of glyphs
         """
         return "\n".join([f"{key}: {value}" for key, value in dict_object.items()])
+
+    @staticmethod
+    def settings() -> dict:
+        """
+        Loads the program's settings from /data/settings.json.
+
+        :return: Dictionary (JSON) containing program settings
+        """
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        settings_path = os.path.join(current_dir, "data", "settings.json")
+        with open(settings_path, encoding="utf-8") as file:
+            data = json.load(file)
+
+        return data
