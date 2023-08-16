@@ -9,16 +9,16 @@ class Glyphoji:
     various glyphs or emojis by their names and aliases. This class provides
     functionalities to retrieve glyphs by their name, search for glyphs, and
     format them.
-    
+
     :attr __glyph_dictionary: A dictionary containing the details of all available glyphs.
     """
-       
+
     def __init__(self):
         """
         Initialises the Glyphoji class by loading the glyphs from data.json.
         """
         self.__glyph_dictionary = self.__data()["glyphs"]
-        
+
     def __getattr__(self, name: str) -> str:
         """
         Retrieves the glyph associated with the given name or alias.
@@ -31,7 +31,7 @@ class Glyphoji:
                 return glyph
 
         return self.search(query=name)
-        
+
     @property
     def glyphs(self) -> str:
         """
