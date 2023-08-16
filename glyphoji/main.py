@@ -17,7 +17,7 @@ class Glyphoji:
         """
         Initialises the Glyphoji class by loading the glyphs from settings.
         """
-        self._glyph_dictionary = self.settings()["glyphs"]
+        self._glyph_dictionary = self.__settings()["glyphs"]
         
     def __getattr__(self, name: str) -> str:
         """
@@ -39,7 +39,7 @@ class Glyphoji:
 
         :return: String containing all glyphs
         """
-        return self._get_glyphs(dict_object=self._glyph_dictionary)
+        return self.__get_glyphs(dict_object=self._glyph_dictionary)
 
     def search(self, query: str) -> str:
         """
@@ -63,10 +63,10 @@ class Glyphoji:
             suggestions = difflib.get_close_matches(query, all_aliases)
             return f"(did you mean {', '.join(suggestions)}?)"
 
-        return f"Close matches to `{query}`:\n{self._get_glyphs(dict_object=result)}"
+        return f"Close matches to `{query}`:\n{self.__get_glyphs(dict_object=result)}"
 
     @staticmethod
-    def _get_glyphs(dict_object: dict) -> str:
+    def __get_glyphs(dict_object: dict) -> str:
         """
         Formats the dictionary of glyphs into a string.
 
@@ -76,7 +76,7 @@ class Glyphoji:
         return "\n".join([f"{key}: {value}" for key, value in dict_object.items()])
 
     @staticmethod
-    def settings() -> dict:
+    def __settings() -> dict:
         """
         Loads the program's settings from /data/settings.json.
 

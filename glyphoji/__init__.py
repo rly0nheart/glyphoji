@@ -13,7 +13,7 @@ def __init_glyph():
 
 glyph = __init_glyph()
 
-__author__ = glyph.settings()["program"]["author"]["name"]
-__email__ = glyph.settings()["program"]["author"]["email"]
-__version__ = glyph.settings()["program"]["version"]
-__description__ = glyph.settings()["program"]["about"]
+__author__ = glyph.__settings()["program"]["author"]["name"]
+__email__ = glyph.__settings()["program"]["author"]["email"]
+__version__ = glyph.__settings()["program"]["version"]
+__description__ = glyph.__settings()["program"]["about"]

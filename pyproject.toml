@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "glyphoji"
-version = "0.2.4"
+version = "0.2.5"
 description = "Modern hieroglyphs in the terminal."
 authors = ["Richard Mwewa <rly0nheart@duck.com>"]
 readme = "README.md"
