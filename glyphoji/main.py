@@ -10,14 +10,14 @@ class Glyphoji:
     functionalities to retrieve glyphs by their name, search for glyphs, and
     format them.
     
-    :attr _glyph_dictionary: A dictionary containing the details of all available glyphs.
+    :attr __glyph_dictionary: A dictionary containing the details of all available glyphs.
     """
        
     def __init__(self):
         """
         Initialises the Glyphoji class by loading the glyphs from settings.
         """
-        self._glyph_dictionary = self.__settings()["glyphs"]
+        self.__glyph_dictionary = self.__settings()["glyphs"]
         
     def __getattr__(self, name: str) -> str:
         """
@@ -26,7 +26,7 @@ class Glyphoji:
         :param name: Name or alias of the glyph
         :return: Glyph if found, or a search suggestion if not found
         """
-        for glyph, details in self._glyph_dictionary.items():
+        for glyph, details in self.__glyph_dictionary.items():
             if name in details["aliases"]:
                 return glyph
 
@@ -39,7 +39,7 @@ class Glyphoji:
 
         :return: String containing all glyphs
         """
-        return self.__get_glyphs(dict_object=self._glyph_dictionary)
+        return self.__get_glyphs(dict_object=self.__glyph_dictionary)
 
     def search(self, query: str) -> str:
         """
@@ -50,14 +50,14 @@ class Glyphoji:
         """
         result = {}
         suggestions = []
-        for glyph, data in self._glyph_dictionary.items():
+        for glyph, data in self.__glyph_dictionary.items():
             if query in data["aliases"] or query in data["description"]:
                 result[glyph] = data
 
         if not result:
             all_aliases = [
                 alias
-                for glyph_data in self._glyph_dictionary.values()
+                for glyph_data in self.__glyph_dictionary.values()
                 for alias in glyph_data["aliases"]
             ]
             suggestions = difflib.get_close_matches(query, all_aliases)
