@@ -5,6 +5,8 @@
 
 *Glyphoji is a simple and lightweight emoji library that lets you easily print and format emojis anywhere in the terminal.*
 ***
+
+# ✅ Getting Started
 ## ⬇️ Installation
 ### 🐍 PyPI
 Glyphoji can be installed from PyPI with `pip` by running the command;
