@@ -2,7 +2,7 @@
     "program": {
         "name": "Glyphoji",
         "about": "Modern hieroglyphs in the terminal.",
-        "version":  "0.2.7",
+        "version":  "0.2.8",
         "author": {
             "name": "Richard Mwewa",
             "email": "rly0nheart@duck.com"
@@ -59,7 +59,7 @@
         "🥩": {"aliases": ["cut_of_meat"], "description": "A cut of meat."},
         "🥓": {"aliases": ["bacon"], "description": "Strips of bacon."},
         "🍔": {"aliases": ["hamburger", "burger"], "description": "A hamburger."},
-        "🍟": {"aliases": ["french_fries"], "description": "French fries."},
+        "🍟": {"aliases": ["french_fries", "fries", "chips" ], "description": "French fries or Chips."},
         "🍕": {"aliases": ["pizza", "slice"], "description": "A slice of pizza."},
         "🌭": {"aliases": ["hotdog", "hot_dog", "hot_diggity_dog"], "description": "A hot dog."},
         "🥪": {"aliases": ["sandwich"], "description": "A sandwich."},
