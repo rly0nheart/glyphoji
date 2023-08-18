@@ -68,7 +68,7 @@ print(glyph.search(query))
 
 Output;
 ```
-Close matches to `flying saucer`:
+[close matches to `flying saucer`]
 🛸: {'aliases': ['flying_saucer', 'ufo', 'spaceship', 'spacecraft'], 'description': 'A flying saucer.'}
 ```
 ***
