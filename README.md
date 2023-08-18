@@ -1,4 +1,4 @@
-![hieroglyph](https://github.com/rly0nheart/glyphoji/assets/74001397/612da558-c52b-48c0-b820-95cce741467e)
+![glyphoji-snake](https://github.com/rly0nheart/glyphoji/assets/74001397/1b32fe5a-ef9a-48b6-89f7-0e0bd647704c)
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
 [![CodeQL](https://github.com/rly0nheart/glyphoji/actions/workflows/codeql.yml/badge.svg)](https://github.com/rly0nheart/glyphoji/actions/workflows/codeql.yml)
 [![Upload Python Package](https://github.com/rly0nheart/glyphoji/actions/workflows/python-publish.yml/badge.svg)](https://github.com/rly0nheart/glyphoji/actions/workflows/python-publish.yml)
