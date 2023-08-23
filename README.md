@@ -1,6 +1,7 @@
 ![glyphoji-snake](https://github.com/rly0nheart/glyphoji/assets/74001397/1b32fe5a-ef9a-48b6-89f7-0e0bd647704c)
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/glyphoji?logo=pypi)
 [![CodeQL](https://github.com/rly0nheart/glyphoji/actions/workflows/codeql.yml/badge.svg)](https://github.com/rly0nheart/glyphoji/actions/workflows/codeql.yml)
 [![Upload Python Package](https://github.com/rly0nheart/glyphoji/actions/workflows/python-publish.yml/badge.svg)](https://github.com/rly0nheart/glyphoji/actions/workflows/python-publish.yml)
 
@@ -68,9 +69,10 @@ print(glyph.search(query))
 
 Output;
 ```
-Close matches to `flying saucer`:
+[close matches to `flying saucer`]
 🛸: {'aliases': ['flying_saucer', 'ufo', 'spaceship', 'spacecraft'], 'description': 'A flying saucer.'}
 ```
 ***
+![python-powered](https://github.com/rly0nheart/glyphoji/assets/74001397/797adebc-2b98-41bc-9019-2b0079fc32dc)
 
-Made with 🖤 by [Richard Mwewa](https://about.me/rly0nheart)
+*Made with 🖤 by [Richard Mwewa](https://about.me/rly0nheart)*

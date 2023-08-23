@@ -61,9 +61,9 @@ class Glyphoji:
                 for alias in glyph_data["aliases"]
             ]
             suggestions = difflib.get_close_matches(query, all_aliases)
-            return f"(did you mean {', '.join(suggestions)}?)"
+            return f"[did you mean {', '.join(suggestions)}?]"
 
-        return f"Close matches to `{query}`:\n{self.__get_glyphs(dict_object=result)}"
+        return f"[close matches to `{query}`]\n{self.__get_glyphs(dict_object=result)}"
 
     @staticmethod
     def __get_glyphs(dict_object: dict) -> str:
