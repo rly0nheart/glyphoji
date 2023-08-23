@@ -2,7 +2,7 @@
     "program": {
         "name": "Glyphoji",
         "about": "Modern hieroglyphs in the terminal.",
-        "version":  "0.2.9",
+        "version":  "0.2.10",
         "author": {
             "name": "Richard Mwewa",
             "email": "rly0nheart@duck.com"
@@ -928,6 +928,17 @@
         "♒": {"aliases": ["aquarius"], "description": "The Aquarius astrological sign in the Zodiac."},
         "♓": {"aliases": ["pisces"], "description": "The Pisces astrological sign in the Zodiac."},
         "⛎": {"aliases": ["ophiuchus"], "description": "The Ophiuchus astrological sign in the Zodiac."},
+        "☉": {"aliases": ["sun_symbol"], "description": "A symbol representing the Sun."},
+        "☽": {"aliases": ["moon_symbol"], "description": "A symbol representing the Moon."},
+        "☿": {"aliases": ["mercury_symbol"], "description": "A symbol representing Mercury, the first planet from the Sun."},
+        "♀": {"aliases": ["venus_symbol"], "description": "A symbol representing Venus, the second planet from the Sun."},
+        "♁": {"aliases": ["earth_symbol"], "description": "A symbol representing Earth, the third planet from the Sun."},
+        "♂": {"aliases": ["mars_symbol"], "description": "A symbol representing Mars, the fourth planet from the Sun."},
+        "♃": {"aliases": ["jupiter_symbol"], "description": "A symbol representing Jupiter, the fifth planet from the Sun."},
+        "♄": {"aliases": ["saturn_symbol"], "description": "A symbol representing Saturn, the sixth planet from the Sun."},
+        "♅": {"aliases": ["uranus_symbol"], "description": "A symbol representing Uranus, the seventh planet from the Sun."},
+        "♆": {"aliases": ["neptune_symbol"], "description": "A symbol representing Neptune, the eighth planet from the Sun."},
+        "♇": {"aliases": ["pluto_symbol"], "description": "A symbol representing Pluto, a dwarf planet in the Solar System."},
         "♀️": {"aliases": ["female_sign"], "description": "The female gender symbol."},
         "♂️": {"aliases": ["male_sign"], "description": "The male gender symbol."},
         "⚧️": {"aliases": ["transgender_symbol"], "description": "The transgender symbol."},
