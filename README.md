@@ -75,4 +75,4 @@ Output;
 ***
 ![python-powered](https://github.com/rly0nheart/glyphoji/assets/74001397/797adebc-2b98-41bc-9019-2b0079fc32dc)
 
-Made with 🖤 by [Richard Mwewa](https://about.me/rly0nheart)
+*Made with 🖤 by [Richard Mwewa](https://about.me/rly0nheart)*
