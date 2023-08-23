@@ -51,7 +51,7 @@ class Glyphoji:
         result = {}
         suggestions = []
         for glyph, data in self.__glyph_dictionary.items():
-            if query in data["aliases"] or query in data["description"]:
+            if query.lower() in data["aliases"] or query.lower() in data["description"].lower():
                 result[glyph] = data
 
         if not result:
