@@ -1,3 +1,5 @@
+![python-powered](https://github.com/rly0nheart/glyphoji/assets/74001397/797adebc-2b98-41bc-9019-2b0079fc32dc)
+
 ![glyphoji-snake](https://github.com/rly0nheart/glyphoji/assets/74001397/1b32fe5a-ef9a-48b6-89f7-0e0bd647704c)
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
