@@ -16,7 +16,6 @@ classifiers = [
     "Operating System :: OS Independent",
     "Topic :: Artistic Software"
 ]
-include = [{path = "glyphoji/data/data.json"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"
