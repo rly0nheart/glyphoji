@@ -18,12 +18,12 @@ Adding visual flair to your code has never been this easy!😎
 
 # ℹ️ Getting Started
 ## ⬇️ Installation
-### 🐍 PyPI
+### 📦 PyPI
 Glyphoji can be installed from PyPI with *pip* by running the command:
 ```
 $ pip install glyphoji
 ```
-### ❔ Dev from GitHub
+### 🚧 Dev from GitHub
 Intstalling the unreleased dev version of Glyphoji can also be done with *pip*:
 ```
 $ pip install git+https://github.com/rly0nheart/glyphoji.git@dev
@@ -31,7 +31,7 @@ $ pip install git+https://github.com/rly0nheart/glyphoji.git@dev
 > The unreleased versions might not be stable.
 ***
 ## 📖 Code Examples
-### 🔣 Available Glyphs/Emojis
+### 😀 Available Glyphs/Emojis
 All glyphs/emojis can be printed by accessing the *glyphs* attribute from the *glyph* instance.
 ```Python
 >>> from glyphoji import glyph
