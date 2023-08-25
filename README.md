@@ -57,4 +57,6 @@ Glyphoji also lets users search for a specific glyph, and returns all results th
 🛸: {'aliases': ['flying_saucer', 'ufo', 'spaceship', 'spacecraft'], 'description': 'A flying saucer.'}
 ```
 ***
+<a href="https://www.buymeacoffee.com/_rly0nheart"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=_rly0nheart&button_colour=40DCA5&font_colour=ffffff&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
 ![me](https://github.com/rly0nheart/glyphoji/assets/74001397/e202c4c1-9a69-40c4-a4da-1e95befb08ee)![python-powered](https://github.com/rly0nheart/glyphoji/assets/74001397/797adebc-2b98-41bc-9019-2b0079fc32dc)
