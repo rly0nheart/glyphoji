@@ -9,7 +9,7 @@ def __init_lib__():
     """
     from .glyphoji import Glyphoji
 
-    return Glyphoji
+    return Glyphoji()
 
 
 __all__ = ["glyph"]
