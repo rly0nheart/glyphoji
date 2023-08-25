@@ -2327,7 +2327,7 @@
         "🌧": {"aliases": ["rain", "cloud"], "description": "A cloud with raindrops."},
         "🌻": {"aliases": ["flower", "sunflower"], "description": "A blooming sunflower."},
         "🌲": {"aliases": ["tree", "pine"], "description": "A tall pine tree."},
-        "🔥": {"aliases": ["fire", "hot"], "description": "A flame, used to convey something's hot."},
+        "🔥": {"aliases": ["fire", "hot", "lit"], "description": "A flame, used to convey something's hot."},
         "🌵": {"aliases": ["cactus", "desert"], "description": "A desert cactus."},
         "🌼": {"aliases": ["flower", "blossom"], "description": "A beautiful flower."},
         "🏵️": {"aliases": ["rosette", "ribbon"], "description": "A decorative rosette."},
