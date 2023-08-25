@@ -12,7 +12,7 @@ This 🍔 is a burger!
 [![CodeQL](https://github.com/rly0nheart/glyphoji/actions/workflows/codeql.yml/badge.svg)](https://github.com/rly0nheart/glyphoji/actions/workflows/codeql.yml)
 [![Upload Python Package](https://github.com/rly0nheart/glyphoji/actions/workflows/python-publish.yml/badge.svg)](https://github.com/rly0nheart/glyphoji/actions/workflows/python-publish.yml)
 
-**Glyphoji** is a friendly emoji library that brings a touch of fun to your terminal experience! 🎉 With a collection of over 2,500 old + new emojis, your code can now smile, wink, and dance. 
+**Glyphoji** is a friendly cross-platform emoji library that brings a touch of fun to your terminal experience! 🎉 With a collection of over 2,500 old + new emojis, your code can now smile, wink, and dance. 
 Adding visual flair to your code has never been this easy!😎
 ***
 
@@ -55,6 +55,25 @@ Glyphoji also lets users search for a specific glyph, and returns all results th
 >>> print(glyph.search(query))
 [close matches to `flying saucer`]
 🛸: {'aliases': ['flying_saucer', 'ufo', 'spaceship', 'spacecraft'], 'description': 'A flying saucer.'}
+```
+
+### 📛 Aliases
+Some glyphs have aliases or alternate names that can also be used to return the glyph itself:
+```Python
+>>> from glyphoji import glyph
+>>> print(f"This {glyph.hotdog} is a hot dog!")
+This 🌭 is a hot dog!
+>>> print(f"This {glyph.hot_diggity_dog} is also a hot dog!")
+This 🌭 is also a hot dog!
+```
+
+
+```Python
+>>> from glyphoji import glyph
+>>> print(f"The party was {glyph.fire}")
+The party was 🔥
+>>> print(f"The party was {glyph.lit}")
+The party was 🔥
 ```
 ***
 <a href="https://www.buymeacoffee.com/_rly0nheart"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=_rly0nheart&button_colour=40DCA5&font_colour=ffffff&font_family=Comic&outline_colour=000000&coffee_colour=FFDD00" /></a>
