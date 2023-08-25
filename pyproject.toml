@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "glyphoji"
-version = "0.2.11"
+version = "0.2.12"
 description = "Modern hieroglyphs in the terminal."
 authors = ["Richard Mwewa <rly0nheart@duck.com>"]
 readme = "README.md"
@@ -16,7 +16,6 @@ classifiers = [
     "Operating System :: OS Independent",
     "Topic :: Artistic Software"
 ]
-include = [{path = "glyphoji/data/settings.json"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"

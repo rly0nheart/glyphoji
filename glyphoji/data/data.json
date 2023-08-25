@@ -2,7 +2,7 @@
     "program": {
         "name": "Glyphoji",
         "about": "Modern hieroglyphs in the terminal.",
-        "version":  "0.2.11",
+        "version":  "0.2.12",
         "author": {
             "name": "Richard Mwewa",
             "email": "rly0nheart@duck.com"
