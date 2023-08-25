@@ -43,26 +43,44 @@ class Glyphoji:
 
     def search(self, query: str) -> str:
         """
-        Searches for a glyph by query and returns results or suggestions.
+        Searches for a glyph by query and returns close matches or suggestions.
 
         :param query: Search query for glyph
         :return: Glyphs if found, or suggestions if not found
         """
         result = {}
         suggestions = []
+
+        # Check if the query is empty or only contains whitespace
+        if query.strip() == "":
+            return "[you provided an empty query]"
+
+        # Iterate through the glyph dictionary
         for glyph, data in self.__glyph_dictionary.items():
-            if query.lower() in data["aliases"] or query.lower() in data["description"].lower():
+            # Check if the query (ignoring case) is found in either the 'aliases' or 'description' of the glyph data
+            if (
+                query.lower() in data["aliases"]
+                or query.lower() in data["description"].lower()
+            ):
                 result[glyph] = data
 
+        # If no matches are found
         if not result:
+            # Create a list of all aliases from the glyph dictionary
             all_aliases = [
                 alias
                 for glyph_data in self.__glyph_dictionary.values()
                 for alias in glyph_data["aliases"]
             ]
+            # Get close matches to the query from the aliases
             suggestions = difflib.get_close_matches(query, all_aliases)
-            return f"[did you mean {', '.join(suggestions)}?]"
+            # If there are suggestions, return them
+            if suggestions:
+                return f"[did you mean {', '.join(suggestions)}?]"
+            else:
+                return f"[no matches found for `{query}`]"
 
+        # If matches are found, return them
         return f"[close matches to `{query}`]\n{self.__get_glyphs(dict_object=result)}"
 
     @staticmethod
