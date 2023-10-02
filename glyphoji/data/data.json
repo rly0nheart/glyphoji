@@ -902,6 +902,7 @@
         "🔞": {"aliases": ["no_one_under_eighteen"], "description": "A no one under eighteen symbol."},
         "☢️": {"aliases": ["radioactive"], "description": "A radioactive symbol."},
         "☣️": {"aliases": ["biohazard"], "description": "A biohazard symbol."},
+        "🔄️": {"aliases": ["counterclockwise_arrows_button", "counterclockwise", "refresh", "rotate"], "description": "Two arrows forming a circle, pointing in an anticlockwise direction."},
         "🅿️": {"aliases": ["p_button"], "description": "A symbol representing a parking sign."},
         "⬆️": {"aliases": ["up_arrow"], "description": "An up arrow."},
         "↗️": {"aliases": ["up_right_arrow"], "description": "An up-right arrow."},
